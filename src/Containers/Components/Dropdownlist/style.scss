@@ -1,0 +1,46 @@
+.ce-dropdown-control {
+height: 42px;
+
+.ce-dropdown
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #C3C3C3;
+    border-radius: 5px;
+    padding: 10px;
+
+    
+    
+   
+    
+}
+.ce-dropdown-scroll
+    {
+         display: flex;
+flex-direction: column;
+background-color: white;
+position: relative;
+
+margin-top: 5px;
+border: 1px solid #6F7780;
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+max-height: 200px;
+overflow: auto;
+.ce-dropdown-item
+    {
+        display: flex;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .ce-chk-control
+    {
+        margin-bottom: 10px;
+    }
+
+
+    }
+}

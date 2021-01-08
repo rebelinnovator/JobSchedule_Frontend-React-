@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+
+.sign-canvas {
+  border: 2px solid $grey;
+}
+
+.no-sign {
+  height: 100px;
+  border: 2px solid $grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.clear-btn {
+  border: 1px solid $grey;
+  display: block;
+}
+
+.download-link {
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}

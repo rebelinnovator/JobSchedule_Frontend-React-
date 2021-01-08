@@ -1,0 +1,63 @@
+@media screen and (max-width: 991px) {
+  .div-role-table {
+    .div-col {
+      min-width: 250px;
+      &:first-child {
+        min-width: 250px;
+      }
+    }
+  }
+}
+
+.div-role-table {
+  .div-header {
+    .div-col {
+      &:first-child {
+        width: 250px;
+      }
+
+      &:nth-child(2) {
+        width: 250px;
+      }
+
+      &:nth-child(3) {
+        width: calc(100% - 700px);
+        .ce-search-control {
+          width: 100%;
+        }
+      }
+
+      &:last-child {
+        width: 200px;
+        border-right: none;
+        .ce-search-control {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .div-body {
+    .div-item {
+      .div-col {
+        &:first-child {
+          width: 250px;
+        }
+
+        &:nth-child(2) {
+          width: 250px;
+        }
+
+        &:nth-child(3) {
+          width: calc(100% - 700px);
+          justify-content: end;
+        }
+
+        &:last-child {
+          width: 200px;
+          border-right: none;
+        }
+      }
+    }
+  }
+}

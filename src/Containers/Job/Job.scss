@@ -1,0 +1,31 @@
+
+.update-job-modal{
+    .modal-body
+    {
+        padding: 0px !important;
+        .ce-align-flex
+        {
+        
+            background: #EDF1F5;
+            border-bottom: 1px solid #DBDEDE;
+            padding: 15px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            span{
+                font-size: 16px; 
+                font-family: Roboto Medium;
+                color: #3A3C3E;
+                
+            }
+        }
+        .modal-job-content
+        {
+            padding: 15px;
+            .btn-primary
+            {
+                font-size: 16px;
+                font-family: Roboto Bold;
+            }
+        }
+    }
+}

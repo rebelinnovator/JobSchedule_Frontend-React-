@@ -1,0 +1,220 @@
+.tbl-list {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #dbdede;
+
+  .chk-control {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tbl-list-left {
+    width: 100%;
+    overflow: auto;
+    overflow-y: hidden;
+    .tbl-columm-comment {
+      border-left: 1px solid #dbdede;
+      // border-right: 1px solid #dbdede;
+    }
+    .tbl-list-content-row {
+      flex-direction: row;
+      display: flex;
+      height: 55px;
+
+      &.editing {
+        .tbl-list-column {
+          .tbl-list-column-content {
+            border-bottom: 1px solid #dbdede;
+            height: 56px;
+            .ce-dropdown-control {
+              height: auto;
+              position: relative;
+              .ce-dropdown-scroll {
+                  position: absolute;
+              }
+            }
+          }
+        }
+      }
+      .tbl-column-chk {
+        display: flex;
+        align-content: center;
+      }
+    }
+    .tbl-list-row-header {
+      display: flex;
+      flex-direction: row;
+      .tbl-column-chk-inner {
+        border-top: none;
+      }
+    }
+
+    .tbl-list-content-row-comment {
+      height: 55px;
+
+      display: flex;
+      flex-direction: row;
+    }
+    .tbl-row-comment {
+      width: 600px;
+      display: flex;
+      margin: 10px;
+      border: 1px solid #c3c3c3;
+      border-radius: 5px;
+      background-color: white;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      padding-right: 10px;
+      padding-left: 10px;
+      input {
+        border: none;
+        width: 100%;
+      }
+    }
+  }
+  .tbl-list-right {
+    width: 80px;
+    border-right: 1px solid #dbdede;
+    border-bottom: 5px solid #dbdede;
+
+    .tbl-list-column-header-right {
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      display: flex;
+      height: 55px;
+      width: 80px;
+      background-color: #edf1f5 !important;
+      border-right: 1px solid #dbdede;
+    }
+    .tbl-list-column-header-right-search {
+      height: 90px;
+      width: 80px;
+      background-color: #edf1f5 !important;
+      border-right: 1px solid #dbdede;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+    .tbl-list-column-content-right {
+      height: 55px;
+      border-top: 1px solid #dbdede;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      padding: 10px;
+    }
+    .right-download {
+      height: 55px;
+      border-top: 1px solid #dbdede;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+    }
+  }
+
+  .tbl-list-column {
+    display: flex;
+
+    white-space: nowrap;
+    font-family: "Roboto Regular";
+    font-size: 14px;
+    border-right: 1px solid #dbdede;
+    // border-bottom: 1px solid #DBDEDE;
+  }
+  .tbl-list-column-header {
+    height: 55px;
+    background-color: #edf1f5 !important;
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+    .search {
+      margin: 10px;
+    }
+  }
+  .tbl-list-column-header-search {
+    height: 90px;
+    width: 150px;
+    padding: 10px;
+    padding-top: 15px;
+    background-color: #edf1f5 !important;
+    .search {
+      margin: 10px;
+    }
+
+    .ce-search-control {
+      margin-top: 13px;
+    }
+  }
+
+  .tbl-list-column-content {
+    height: 55px;
+    border-top: 1px solid #dbdede;
+    display: flex;
+    width: 150px;
+    align-items: center;
+    padding: 10px;
+
+    .editing {
+      padding-left: 10px;
+      .editing-control {
+        height: 32px;
+      }
+    }
+    span {
+      display: flex;
+      white-space: nowrap;
+      font-family: "Roboto Regular";
+      font-size: 14px;
+    }
+  }
+  .tbl-columm-chk {
+    display: flex;
+    background-color: #edf1f5 !important;
+  }
+
+  .tbl-column-chk-inner {
+    width: 60px;
+    display: flex;
+    border-right: 1px solid #dbdede;
+    border-top: 1px solid #dbdede;
+    border-left: 1px solid #dbdede;
+  }
+  /**Custome css for dropdown*/
+  .ce-dropdown-control {
+    .ce-dropdown {
+      padding: 4px !important;
+      display: flex;
+      flex: 1;
+      width: 130px;
+    }
+  }
+}
+
+.tbl-list-content-row {
+  .tbl-columm-comment {
+    .tbl-column-chk-inner {
+      border-top: 0 !important;
+    }
+  }
+}
+
+.tbl-list-column-content-right,
+.tbl-list-column-header-right {
+  svg {
+    cursor: pointer;
+  }
+}
+
+.tbl-list {
+  .tbl-list-column {
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}

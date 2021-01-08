@@ -1,0 +1,41 @@
+.ce-search-radius {
+  display: flex;
+  align-self: flex-start;
+  width: 144px;
+  flex-direction: column;
+
+  .ce-search-radius-control {
+    border-radius: 5px;
+    border: 1px solid #C3C3C3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 42px;
+
+    .ce-search-input {
+      padding: 5px;
+      width: 50%;
+      height: 100%;
+    }
+
+  }
+
+  .ce-search-separator {
+    height: 100%;
+    width: 1px;
+    background: #C3C3C3;
+  }
+
+  .ce-search-picker {
+    padding: 10px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+  }
+
+  .custom-context {
+    width: auto !important;
+  }
+}

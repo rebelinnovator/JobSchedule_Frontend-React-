@@ -1,0 +1,186 @@
+@import "../../variables.scss";
+
+.job-list-box {
+  display: inline-block;
+  width: 100%;
+  .job-item {
+    border: 1px solid #dbdede;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: box-shadow 500ms;
+    &.job-active {
+      box-shadow: 0px 2px 11px 0 rgba(50, 50, 50, 0.2);
+      background-color: lightgray;
+    }
+    .job-component {
+      width: 100%;
+      padding: 0 !important;
+      margin: 0 !important;
+      background: transparent;
+      border: 0;
+    }
+
+    .header {
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      background-color: #edf1f5;
+      justify-content: space-between;
+      justify-items: center;
+      align-items: center;
+      border-bottom: 1px solid #dbdede;
+    }
+
+    .header-title {
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .title {
+      color: #3a3c3e;
+      font-size: 16px;
+      font-family: "Roboto Medium";
+    }
+
+    .content {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      .request-date-time-title {
+        color: $grey;
+        font-size: 14px;
+      }
+
+      .request-date-time {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+      }
+    }
+
+    .circle-completed {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $job-status-completed;
+      margin-left: 25px;
+      margin-right: 5px;
+    }
+
+    .circle-inprogress {
+      width: 10px;
+      height: 10px;
+      border-radius: 50px;
+      margin-left: 25px;
+      margin-right: 5px;
+      background-color: $job-status-inprogress;
+    }
+
+    .circle-new {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-left: 25px;
+      margin-right: 5px;
+      background-color: $job-status-new;
+    }
+
+    .circle-billed {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-left: 25px;
+      margin-right: 5px;
+      background-color: $job-status-billed;
+    }
+
+    .circle-review {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-left: 25px;
+      margin-right: 5px;
+      background-color: yellow;
+    }
+
+    .circle-paid {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-left: 25px;
+      margin-right: 5px;
+      background-color: $job-status-paid;
+    }
+
+    .job-worker {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .worker-box {
+      border-radius: 18px;
+      display: flex;
+      width: 36px;
+      height: 36px;
+      background-color: white;
+      align-items: center;
+      justify-content: center;
+      margin-left: -10px;
+    }
+
+    .worker-box-round {
+      width: 30px;
+      height: 30px;
+      background-color: $grey;
+      align-items: center;
+      justify-items: center;
+      border-radius: 15px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .worker-total {
+      color: #fff;
+      align-self: center;
+      font-size: 14px;
+      font-family: Roboto Regular;
+    }
+
+    .worker-img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .create-job {
+    display: flex;
+    width: 100%;
+  }
+
+  .os-offset {
+    /* CSS for other than iOS devices */
+    padding-right: 0 !important;
+  }
+
+  .create-job-button {
+    background-color: #37a568;
+    height: 43px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Roboto Bold;
+
+    color: $white;
+    border-radius: 5px;
+    width: 100%;
+
+    text-align: center;
+    align-self: center;
+  }
+}

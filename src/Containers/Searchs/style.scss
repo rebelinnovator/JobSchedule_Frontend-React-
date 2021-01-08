@@ -1,0 +1,70 @@
+.filter-box {
+  margin-bottom: 20px;
+  .ce-form-control {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    padding: 5px;
+    align-content: center;
+    align-items: center;
+  }
+  .ce-input-control {
+    border: 0px;
+    width: 100%;
+  }
+  .ce-content-box {
+    width: 50%;
+  }
+  .ce-padding-15 {
+    padding-left: 25px;
+  }
+  .job-type {
+    .content {
+      margin-left: 25px;
+    }
+  }
+  .job-status {
+    .content {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .schedule {
+    display: flex;
+    border-top: 1px solid #dbdede;
+    padding: 15px;
+    justify-content: space-between;
+  }
+  .request-date {
+    .request-date-content {
+      display: flex;
+      justify-content: space-between;
+    }
+    .date-control {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #c3c3c3;
+      border-radius: 3px;
+      padding: 5px;
+      align-content: center;
+      align-items: center;
+    }
+    .date-input {
+      border: 0px;
+    }
+    .separater-date {
+      width: 10px;
+    }
+  }
+  .filter-button {
+    background-color: #c3c3c3;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+
+    width: 121px;
+    text-align: center;
+    align-self: center;
+  }
+}

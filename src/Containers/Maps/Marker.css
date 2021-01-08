@@ -1,0 +1,77 @@
+.map-point {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50% 50% 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 2;
+}
+
+.map-point-text {
+    color: #009ada;
+    margin-top: 3px;
+}
+
+.map-point-image {
+    width: 40px;
+    height: 40px;
+}
+
+.map-point:after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    margin: 8px 0 0 8px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(0.1, 0.1);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.2, 1.2);
+        opacity: 0;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-2000px) rotate(-45deg);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(30px) rotate(-45deg);
+    }
+
+    80% {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(-45deg);
+    }
+}

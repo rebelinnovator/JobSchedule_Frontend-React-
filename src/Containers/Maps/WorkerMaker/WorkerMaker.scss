@@ -1,0 +1,17 @@
+.worker-marker {
+		width: 60px;
+    height: 60px;
+    margin: -40px 0 0 -30px;
+    background-position: center;
+    background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		.worker-avatar {
+			width: 30px;
+			height: 30px;
+			position: relative;
+			top: 6px;
+		}
+}

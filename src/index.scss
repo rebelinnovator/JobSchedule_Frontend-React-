@@ -1,0 +1,379 @@
+@import "./variables.scss";
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  font-family: Roboto Regular;
+  background: #fafafa;
+  color: #3a3c3e;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.ce-width-100 {
+  width: 120px;
+}
+
+.ce-title {
+  color: #3a3c3e;
+  font-size: 14px;
+  display: flex;
+}
+
+.circle-active,
+.circle-parking-completed {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #37a568;
+}
+
+.circle-completed,
+.circle-signage-completed {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $job-status-completed;
+}
+
+.circle-inactive {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $job-status-inactive;
+}
+
+.circle-onhold,
+.circle-pending,
+.circle-new {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $job-status-new;
+}
+
+.circle-inprogress {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  background-color: $job-status-inprogress;
+}
+
+.circle-billed {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $job-status-billed;
+}
+
+.circle-paid {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $job-status-paid;
+}
+
+.ce-btn {
+  border: 1px solid #dbdede;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: hand !important;
+}
+
+.ce-btn-confirm {
+  color: white !important;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: #6f7780;
+  font-size: 16px;
+  justify-content: center;
+  font-family: Roboto Regular;
+  height: 43px;
+  align-items: center;
+  width: 183px;
+  display: flex;
+}
+
+.ce-btn-info {
+  color: white !important;
+  height: 43px;
+  background-color: #34a466;
+  font-family: Roboto Medium;
+  font-size: 16px;
+  width: 183px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ce-btn-success {
+  color: white !important;
+  height: 43px;
+  background-color: #009ada;
+
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+}
+
+.ce-btn-modal-save {
+  background-color: #009ada;
+  padding: 10px;
+  width: 200px;
+
+  font-family: "Roboto Bold";
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+
+  // margin-left: 10px;
+  span {
+    color: white;
+  }
+}
+
+.ce-btn-modal-cancel {
+  margin-right: 10px;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #6f7780;
+  padding-top: 10px;
+
+  font-family: "Roboto Bold";
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.ce-form-control {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #c3c3c3;
+  border-radius: 3px;
+  padding: 5px;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 42px;
+  font-size: 14px;
+  font-family: Roboto Regular;
+}
+
+.ce-input-control {
+  border: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.ce-btn-plus {
+  height: 42px;
+  width: 42px;
+  padding: 10px;
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+}
+
+.ce-d-flex {
+  flex: 1;
+}
+
+.ce-flex {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ce-align-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ce-flex-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ce-modal-content {
+  width: 450px !important;
+}
+
+.ce-ml-10 {
+  margin-left: 10px;
+}
+
+.ce-mr-10 {
+  margin-right: 10px;
+}
+
+.ce-pd-20 {
+  padding: 20px;
+}
+
+.ce-pd-tb {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.ce-pd-left-20 {
+  padding-left: 20px;
+}
+
+.ce-pd-top-20 {
+  padding-top: 20px;
+}
+
+.ce-pd-bottom-20 {
+  padding-bottom: 20px;
+}
+
+.ce-pd-bottom-10 {
+  padding-bottom: 10px;
+}
+
+.ce-search-control {
+  border: 1px solid #c3c3c3;
+  border-radius: 3px;
+  padding: 3px;
+  background-color: white;
+
+  .ce-search-control-input {
+    width: 100%;
+    border: none;
+    height: 29px;
+  }
+
+}
+
+.sort-active,
+.filter-active {
+  background: #6f7780;
+}
+
+.clear-icon {
+  width: 10px;
+  height: 10px;
+  // background-image: url(./Assets/clear.png);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+}
+
+/** Remove higligt border */
+input:focus,
+select:focus,
+textarea:focus,
+button:hover,
+button:focus {
+  outline: none;
+}
+
+/* Side - Right */
+.slide-content {
+  .ce-btn-success {
+    font-size: 16px;
+    font-family: Roboto Bold;
+  }
+}
+
+.ce-assign-worker-screen {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.box-item-body-none {
+  background: white;
+
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #dbdede !important;
+  overflow: hidden;
+  margin-bottom: 7px;
+
+  .form-group {
+    padding: 20px 60px;
+  }
+
+  .create-job-assign-worker {
+    border-top: 1px solid #dbdede;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+
+    a {
+      color: #6f7780 !important;
+      text-decoration: none;
+    }
+  }
+}
+
+.request-date-content,
+.ce-date,
+.react-date-picker {
+  width: 100%;
+}
+
+.react-date-picker .react-date-picker__wrapper,
+.react-time-picker .react-time-picker__wrapper {
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #c3c3c3;
+  border-color: #c3c3c3;
+  border-radius: 3px;
+  padding: 5px;
+  align-content: center;
+  align-items: center;
+  height: 42px;
+  width: 100%;
+}
+
+.modal-custom {
+  .actions {
+    button {
+      width: auto;
+    }
+  }
+}
+
+.Collapsible {
+  h3.title {
+    background: #edf1f5;
+    border-bottom: 1px solid #dbdede;
+    padding: 18px 45px;
+    font-size: 16px;
+    font-family: Roboto Medium;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    svg{
+      margin-right: 10px;
+    }
+  }
+
+  .notify-item {
+    padding: 19px 45px;
+
+    h4 {
+      font-size: 16px;
+      font-family: Roboto Medium;
+      margin-bottom: 15px;
+    }
+  }
+  .actions{
+    padding: 0 45px 19px;
+    text-align: right;
+    button{
+      width: 120px;
+    }
+  }
+}

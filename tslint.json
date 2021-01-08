@@ -1,0 +1,25 @@
+{
+  "extends": [
+    // "tslint-config-airbnb"
+  ],
+  "rules": {
+    // override tslint-react rules here
+    "quotemark": [true, "single", "jsx-double", "tsx-double"],
+    "prefer-array-literal": false,
+    "no-console": false,
+    "no-object-literal-type-assertion": false,
+    "import-name": false,
+    "@typescript-eslint/indent": ["error", 2],
+    "brace-style": false,
+    "triple-equals": false,
+    "variable-name": false,
+    "function-name": false,
+    "semicolon": [
+      true,
+      "always",
+      "ignore-bound-class-methods"
+    ],
+    "ter-prefer-arrow-callback": false,
+    "jsx-wrap-multiline": false
+  }
+}

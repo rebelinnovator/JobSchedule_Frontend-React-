@@ -1,0 +1,31 @@
+.mapRow {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.map-point {
+  font-size: 12px;
+  transition: transform 400ms;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.map-point-text {
+  color: #009ada;
+  margin-top: 3px;
+}
+
+.map-point-image {
+  width: 40px;
+  height: 40px;
+}
+.map-point-active {
+  transform: scale(1.4);
+  z-index: 1000;
+}

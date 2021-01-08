@@ -1,0 +1,15 @@
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	padding: -6px;
+  .img-wrapper {
+		background-color: #eee;
+		overflow: hidden;
+		width: calc(50% - 6px);
+		height: 150px;
+		margin: 3px;
+    img {
+			width: 100%;
+    }
+  }
+}

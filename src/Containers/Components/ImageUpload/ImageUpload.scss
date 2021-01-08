@@ -1,0 +1,45 @@
+.dropzone {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-width: 2px;
+  border-radius: 2px;
+  border-color: #eeeeee;
+  border-style: dashed;
+  background-color: #fafafa;
+  color: #bdbdbd;
+  outline: none;
+  transition: border 0.24s ease-in-out;
+}
+.thumb-wrapper {
+  display: inline-flex;
+  border-radius: 2px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  width: 200px;
+  height: 150px;
+  padding: 4;
+	box-sizing: border-box;
+  .thumb {
+    display: flex;
+    min-width: 0;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		height: auto;
+    img {
+      display: block;
+			width: 100%;
+			height: auto;
+		}
+		.icon-close {
+			position: absolute;
+			right: 5px;
+			top: 5px;
+			cursor: pointer;
+		}
+  }
+}

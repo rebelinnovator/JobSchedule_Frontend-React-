@@ -1,0 +1,46 @@
+.work-time-start-time {
+	& > div {
+		width: 100%;
+	}
+}
+.ce-assign-worker {
+	.work-time {
+		display: flex;
+		align-items: center;
+		.work-time-start-date {
+			align-items: center;
+			margin-right: 10px;
+		}
+		.work-time-start-time {
+			display: none;
+			flex-direction: row;
+			.ce-form-control {
+				width: 80px;
+			}
+
+			& > div {
+				width: 100%;
+			}
+		}
+	}
+	.ce-btn-plus {
+		margin-left: 10px;
+	}
+	.ce-assign-worker-action {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+}
+.worker-row-item {
+	border: 1px solid #dbdede;
+}
+.worker-action {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.ce-assign-worker-record {
+	margin-top: 15px;
+	align-items: center;
+	align-content: center;
+}

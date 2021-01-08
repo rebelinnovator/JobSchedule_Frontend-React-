@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="35" height="35" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Component_29_1" data-name="Component 29 – 1" clip-path="url(#clip-path)">
+    <circle id="Ellipse_112" data-name="Ellipse 112" cx="17.5" cy="17.5" r="17.5" fill="#dbdede"/>
+    <path id="map-marker-alt-solid" d="M5.047,14.7C.79,8.526,0,7.893,0,5.625a5.625,5.625,0,0,1,11.25,0c0,2.268-.79,2.9-5.047,9.072A.7.7,0,0,1,5.047,14.7Zm.578-6.729A2.344,2.344,0,1,0,3.281,5.625,2.344,2.344,0,0,0,5.625,7.969Z" transform="translate(12 10)" fill="#6f7780"/>
+  </g>
+</svg>

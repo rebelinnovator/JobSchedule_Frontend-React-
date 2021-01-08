@@ -1,0 +1,41 @@
+.worker-group {
+  .collaped-content,
+  .Collapsible {
+    width: 100%;
+  }
+  .button {
+    line-height: 1;
+    width: 50px;
+    height: 100%;
+  }
+  .avatar-wrapper {
+    margin-left: -18px;
+  }
+  .status {
+    color: #37a568;
+  }
+  .button-submit {
+    background-color: #37a568;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    height: 2rem;
+    line-height: 1;
+    margin-left: 30px;
+    border: none;
+    padding: 0.5px 10px;
+  }
+  .button-update-status {
+    @extend .button-submit;
+    background: #009ada;
+  }
+  .worker-link {
+    flex-grow: 1;
+    height: 35px;
+  }
+}
+
+.has-seen {
+  width: 24px;
+  height: 24px;
+}

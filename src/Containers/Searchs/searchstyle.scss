@@ -1,0 +1,39 @@
+.custom-context{
+    border: solid 1px #ccc;
+    display: inline-block;
+    margin: 5px;
+    background: #6F7780;
+    color: white;
+    padding: 7px 0;
+
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 186px;
+
+   .custom-context-item{
+    border-bottom: dotted 1px #ccc;
+    padding: 5px 15px;
+    height: 35px;
+   }
+   .custom-context-item-last{
+    padding: 5px 15px;
+    height: 35px;
+   }
+   .custom-context-item-last:hover{
+       background: #EDF1F520;
+   }
+   .custom-context-item-role-last{
+    padding: 7px 15px;
+   }
+   .custom-context-item-role-last:hover{
+       background: #EDF1F520;
+   }
+   .content-item {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+}
